@@ -1,6 +1,7 @@
 .main__container-about{
     display: flex;
     margin-top: 50px;
+    justify-content: center;
 }
 
 .about-filing-text-paragraph{
@@ -8,6 +9,12 @@
 }
 
 .about-filing{
+    max-width: 1280px;
+    display: flex;
+    width: 100%;
+}
+
+.about-mainContent{
     display: block;
 }
 
@@ -54,8 +61,8 @@
 
 @media (min-width: 360px){
     .main__container-about{
-        height: 673px;
         padding-left: 5px;
+        margin-bottom: 50px;
     }
     .about-filing-image{
         display: none;
@@ -96,7 +103,6 @@
         align-items: center;
     }
     .main__container-about{
-        height: 520px;
         padding-left: 25px;
     }
     .about-filing-image{
