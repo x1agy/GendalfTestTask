@@ -1,4 +1,9 @@
+.header{
+    display: flex;
+    justify-content: center;
+}
 .header__container-mob{
+    width: 100%;
     height: 101px;
     align-items: center;
     justify-content: space-around;
@@ -17,6 +22,8 @@
     align-items: center;
     background-color: #00B7EC;
     width: 100%;
+    max-width: 1280px;
+    
 }
 
 .header__container-desk-button{
@@ -40,4 +47,15 @@
     flex-grow: 1;
     display: flex;
     justify-content: space-around;
+}
+
+@media(min-width: 380px){
+    .header{
+        background-color: #ffff;
+    }
+}
+@media(min-width: 910px){
+    .header{
+        background-color: #00B7EC;
+    }
 }

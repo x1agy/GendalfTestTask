@@ -13,11 +13,6 @@ body {
     min-height: 100vh;
 }
 
-.container{
-    min-width: auto;
-    margin: 0 auto;
-}
-
 @media (min-width: 380px){
     .header__container-mob{
         display: flex;
@@ -25,10 +20,16 @@ body {
     .header__container-desk{
         display: none;
     }
+    .main__container-welcome{
+        background-image: url('../img/mainimages/913d3db7df9034b36790b337de8b3696.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 
-@media (min-width: 1295px){
+@media (min-width: 910px){
     .header__container-mob{
         display: none;
     }
