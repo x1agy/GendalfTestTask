@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    min-width: 380px;
+    min-height: 100vh;
+}
+
+.container{
+    min-width: auto;
+    margin: 0 auto;
+}
+
+@media (min-width: 380px){
+    .header__container-mob{
+        display: flex;
+    }
+    .header__container-desk{
+        display: none;
+    }
+}
+
+
+@media (min-width: 1295px){
+    .header__container-mob{
+        display: none;
+    }
+    .header__container-desk{
+        display: flex;
+    }
+}
+
