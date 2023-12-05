@@ -1,0 +1,128 @@
+.main__container-welcome{
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.main__container-welcome::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 47, 61, 0.70);
+    opacity: 100%;
+}
+
+.main__container-welcome-filling{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__container-welcome-text{
+    text-align: center;
+}
+.main__container-welcome-buttons button{
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.welcome-button-first:hover{
+    background-color: darkgreen;
+    transition: 0.3s;
+}
+
+.welcome-button-second:hover{
+    background-color: lightgray;
+    transition: 0.3s;
+}
+
+.welcome-button-first{
+    background-color: #9BCC37;
+    color: #fff;
+    border: none;
+}
+.welcome-button-second{
+    background-color: #fff;
+    color: #9BCC37;
+    border: 1px solid #9BCC37;
+}
+
+@media(min-width: 360px){
+    .main__container-welcome{
+        height: 411px;
+    }
+    .main__container-welcome-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .welcome-button-first{
+        width: 295px;
+        height: 50px;
+        margin: 5px;
+    }
+    .welcome-button-second{
+        width: 295px;
+        height: 50px;
+        margin: 5px;
+    }
+    .main__container-welcome-text{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .welcome-text-title{
+        margin: 31px 15px 20px 12px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130.182%;
+    }
+    .welcome-text-paragraph{
+        margin-bottom: 56px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }  
+}
+@media(min-width: 910px){
+    .main__container-welcome{
+        height: 568px;
+    }
+    .main__container-welcome-buttons{
+        display: flex;
+        flex-direction: row;
+    }
+    .welcome-text-title{
+        margin: 63px 0px 20px 0px;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .welcome-text-paragraph{
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+        font-size: 25px;
+        margin: 0px 15% 43px 15%;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }  
+    .welcome-button-first{
+        width: 175px;
+        height: 50px;
+    }
+    .welcome-button-second{
+        margin-left: 63px;
+        width: 327px;
+        height: 50px;
+    }   
+}
+

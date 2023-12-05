@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
 }
 
-@media (min-width: 380px){
+@media (min-width: 360px){
     .header__container-mob{
         display: flex;
     }
@@ -21,7 +21,7 @@ body {
         display: none;
     }
     .main__container-welcome{
-        background-image: url('../img/mainimages/913d3db7df9034b36790b337de8b3696.jpg');
+        background-image: url('../img/mainimages/mainWelcomeBGImage.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -35,6 +35,12 @@ body {
     }
     .header__container-desk{
         display: flex;
+    }
+    .main__container-welcome{
+        background-image: url('../img/mainimages/mainWelcomeBGImageDesk.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 

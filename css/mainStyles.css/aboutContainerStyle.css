@@ -1,0 +1,129 @@
+.main__container-about{
+    display: flex;
+    margin-top: 50px;
+}
+
+.about-filing-text-paragraph{
+    color: #666;
+}
+
+.about-filing{
+    display: block;
+}
+
+.about-filing-text{
+    font-style: normal;
+    line-height: normal;
+}
+
+.about-filing-text-title{
+    color: #00B7EC;
+}
+
+.about-filing-buttons button{
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about-button-first{
+    background-color: #00B7EC;
+    border: none;
+    color: white;
+}
+.about-button-second{
+    border-radius: 5px;
+    border: 1px solid #00B7EC;
+    background: #FFF;
+    color: #00B7EC;
+}
+
+.about-button-first:hover{
+    background-color: lightblue;
+    transition: 0.3s;
+}
+
+.about-button-second:hover{
+    background-color: lightgray;
+    transition: 0.3s;
+}
+
+.about-filing-image{
+    height: 370px;
+    margin-left: auto;
+}
+
+@media (min-width: 360px){
+    .main__container-about{
+        height: 673px;
+        padding-left: 5px;
+    }
+    .about-filing-image{
+        display: none;
+    }
+    .about-filing-text-title{
+        text-align: center;
+        font-size: 28px;
+        font-weight: 400;
+        margin: 45px 10% 0 10%;
+    }
+    .about-filing-text-paragraph{
+        font-size: 16px;
+        font-weight: 400;
+        margin: 10px 5% 30px 5%;
+    }
+    .about-button-first{
+        width: 295px;
+        height: 50px;
+        flex-shrink: 0;
+    }
+    .about-button-second{
+        margin-top: 10px;
+        width: 295px;
+        height: 50px;
+        flex-shrink: 0;
+    }
+    .about-filing-buttons{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width: 910px){
+    .about-filing-buttons{
+        flex-direction: column;
+        display: block;
+        align-items: center;
+    }
+    .main__container-about{
+        height: 520px;
+        padding-left: 25px;
+    }
+    .about-filing-image{
+        display: block;
+    }
+    .about-filing-text-title{
+        text-align: start;
+        font-size: 36px;
+        font-weight: 10;
+        margin: 0;
+    }
+    .about-filing-text-paragraph{
+        font-size: 19px;
+        font-weight: 400;
+        margin: 20px 0 20px 0;
+        width: 728px;
+    }
+    .about-button-first{
+        width: 200px;
+        height: 50px;
+        flex-shrink: 0;
+    }
+    .about-button-second{
+        margin-left: 21px;
+        width: 290px;
+        height: 50px;
+        flex-shrink: 0;
+    }
+
+}
