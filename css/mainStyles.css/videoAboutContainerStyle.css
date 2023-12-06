@@ -33,7 +33,10 @@
 
 .videoHolder-video{
     position: relative;
-    width: fit-content;
+    
+}
+.video-image{
+    width: 360px;
 }
 
 .video-playButtonIcon{
