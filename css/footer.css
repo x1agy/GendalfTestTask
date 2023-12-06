@@ -1,0 +1,256 @@
+.form-userResume-input{
+    display: none;
+}
+.footer{
+    background-image: url(../img/footerImages/footerFormBGImage.jpg); 
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 61px 0 61px 0;
+}
+.footer::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 47, 61, 0.70);
+    opacity: 100%;
+}
+
+.footer__container-form{
+    opacity: 0.9;
+    background: #00B7EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-title{
+    margin: 0;
+}
+
+.form-buttons{
+    display: flex;
+}
+
+.labelForUserResumeInput{
+    display: flex;
+}
+
+.fieldset-answer{
+    cursor: pointer;
+}
+
+@media(min-width:360px){
+    .form-title{
+        color: #FFF;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 100;
+        line-height: normal;
+        margin: 24px 10% 21px 0;
+        text-align: center;
+    }
+    .footer__container-form{
+        width: 360px;
+        height: 670px;
+    }
+    .form-valueName,
+    .form-valuePhone,
+    .form-valueEmail,
+    .form-valueGrade{
+        width: 300px;
+        height: 50px;
+        margin-bottom: 6px;
+    }
+    .form-valueName::placeholder,
+    .form-valuePhone::placeholder,
+    .form-userQuestions::placeholder,
+    .form-valueEmail::placeholder,
+    .form-valueGrade::placeholder{
+        color: lightgray;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        padding-left: 16px;
+    }
+    .form-valueName,
+    .form-valuePhone,
+    .form-userQuestions,
+    .form-valueEmail,
+    .form-valueGrade{
+        color: #666;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 10px;
+    }
+    .jobCategory-fieldset{
+        width: 300px;
+        padding: 0;
+        border: none;
+        font-size: 22px;
+        color: #FFF;
+        font-weight: 100;
+    }
+    .jobCategory-title{
+        margin: 17px 0 10px 0;
+    }
+    .form-userQuestions{
+        width: 300px;
+        height: 50px;
+        height: fit-content;
+        margin-bottom: 21px;
+        margin-top: 15px;
+    }
+    .form-userResumeHolder{
+        width: 300px;
+        background-color: #FFF;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: #9BCC37;
+        border: 1px solid #9BCC37;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 5px;
+        margin-bottom: 6px;
+    }
+    .form-submitButton{
+        cursor: pointer;
+        border: none;
+        height: 50px;
+        width: 300px;
+        background-color: #9BCC37;
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 5px;
+        margin-bottom: 6px;
+    }
+    .form-buttons{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(min-width:910px){
+    .form-buttons{
+        width: 570px;
+        margin-bottom: 70px;
+        flex-direction: row;
+    }
+    .form-userResumeHolder{
+        width: 270px;
+        background-color: #FFF;
+        margin-right: 5px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: #9BCC37;
+        border: 1px solid #9BCC37;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 5px;
+    }
+    .form-submitButton{
+        cursor: pointer;
+        border: none;
+        height: 50px;
+        width: 295px;
+        background-color: #9BCC37;
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 5px;
+    }
+    .footer__container-form{
+        width: 840px;
+        height: 720px;
+    }
+    .form-title{
+        margin-top: 43px;
+        margin-bottom: 18px;
+        color: #FFF;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 1;
+        line-height: normal;
+    }
+    .form-valueName,
+    .form-valuePhone,
+    .form-valueEmail,
+    .form-valueGrade{
+        width: 570px;
+        height: 50px;
+        margin-bottom: 6px;
+    }
+    .form-valueName::placeholder,
+    .form-valuePhone::placeholder,
+    .form-userQuestions::placeholder,
+    .form-valueEmail::placeholder,
+    .form-valueGrade::placeholder{
+        color: lightgray;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        padding-left: 16px;
+    }
+    .form-valueName,
+    .form-valuePhone,
+    .form-userQuestions,
+    .form-valueEmail,
+    .form-valueGrade{
+        color: #666;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 10px;
+    }
+    .jobCategory-fieldset{
+        width: 570px;
+        padding: 0;
+        border: none;
+        font-size: 22px;
+        color: #FFF;
+        font-weight: 100;
+    }
+    .jobCategory-title{
+        margin: 17px 0 10px 0;
+    }
+    .fieldset-answer{
+        margin-bottom: 7px;
+    }
+    .form-userQuestions{
+        width: 570px;
+        min-height: 108px;
+        height: fit-content;
+        margin-bottom: 16px;
+        margin-top: 15px;
+    }
+}

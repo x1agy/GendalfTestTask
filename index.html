@@ -105,8 +105,42 @@
         </div>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+        <form action="" class="footer__container-form">
+            <h1 class="form-title">Записаться на собеседование</h1>
+            <input required type="text" class="form-valueName" placeholder="Как к вам обращаться?">
+            <input required type="tel" class="form-valuePhone" placeholder="Телефон">
+            <input required type="email" class="form-valueEmail" placeholder="Email">
+            <input required type="text" class="form-valueGrade" placeholder="Желаемая должность">
+            <div class="form-jobCategory">
+                <fieldset class="jobCategory-fieldset">
+                    <h4 class="jobCategory-title">Выберите категорию занятости</h4>
+                    <div class="fieldset-answer">
+                        <input type="radio" id="office" value="office" name="drone" checked>
+                        <label for="office">Работа в офисе</label>
+                    </div>
+                    <div class="fieldset-answer">
+                        <input type="radio" id="trainee" value="trainee" name="drone">
+                        <label for="trainee">Стажировка</label>
+                    </div>
+                    <div class="fieldset-answer">
+                        <input type="radio" id="free" value="free" name="drone">
+                        <label for="free">Удалёная работа</label>
+                    </div>
+                </fieldset>
+            </div>
+            <textarea cols="30" rows="10" class="form-userQuestions" placeholder="Ваши вопросы"></textarea>
+            <div class="form-buttons">
+                <div class="form-userResumeHolder">
+                    <input type="file" id="resume" class="form-userResume-input">
+                    <label class="labelForUserResumeInput" for="resume">Прикрепить резюме <img src="img/footerImages/footerFormAtachFileIcon.png" class="userResumeInputIcon" alt="formAtachIcon"></label>
+                </div>
+                <button class="form-submitButton">Оставить заявку</button>
+            </div>
+        </form>
+    </footer>
 
     <script src="script/accordion-container-script.js"></script>
+    <script src="script/form-validation-script.js"></script>
 </body>
 </html>

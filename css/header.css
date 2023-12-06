@@ -43,6 +43,11 @@
 .header__container-desk-filling-text{
     color: #fff;
 }
+
+.header__container-desk-filling-text:hover{
+    cursor: pointer;
+}
+
 .header__container-desk-filling{
     flex-grow: 1;
     display: flex;
