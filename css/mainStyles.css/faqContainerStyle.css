@@ -1,0 +1,76 @@
+.main__container-faq{
+    background: linear-gradient(163deg, rgba(40, 228, 115, 0.16) 11.27%, rgba(70, 205, 22, 0.14) 35.82%, rgba(39, 221, 209, 0.39) 57.4%, rgba(5, 176, 213, 0.32) 82.7%);
+    backdrop-filter: blur(3.5px);
+    position: relative;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.accordion-content{
+    display: none;
+}
+
+.faq-filing{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;
+    align-items: center;
+}
+
+.accordion-title{
+    cursor: pointer;
+    color: #666;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-bottom: 21px;
+    margin-left: 10px;
+
+}
+
+.questions-item-accordion::marker{
+    content:url('../../img/mainimages/mainFaqIsTogleIcon.png');
+}
+
+.accordion-content{
+    padding: 0;
+    color: #666;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    margin-bottom: 21px;
+    margin-left: 10px;
+    margin-right: 30%;
+}
+
+.faq-title{
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+}
+
+
+@media(min-width: 360px){
+    .faq-title{
+        padding: 34px 0 10px 40px;
+        color: #14AFE8;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .faq-image-desk{
+        display: none;
+        margin-left: auto;
+        margin-top: 50px;
+    }
+}
+
+@media(min-width: 910px){
+    .faq-image-desk{
+        display: block;
+    }
+}
